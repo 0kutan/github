@@ -9,7 +9,7 @@
     </head>
     <body> class="antialiased">
     <h1>Blog Name</h1>
-       <form action="/posts" method="POST">
+       <form action="/posts" method="POST"> enctype="multipart/form-date">
            @csrf
            <div class="title">
                 <h2>Title</h2>
