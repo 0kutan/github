@@ -16,8 +16,8 @@ class Post extends Model
         'body'
         ];
     
-    public function getPaginateByLimit(int $limit_count = 5)
+    public function category()
     {
-        return $this->orderby('updated_at', 'DESC')->paginate($limit_count);
+        return $this->belongsTo(Category::class);
     }
 }
